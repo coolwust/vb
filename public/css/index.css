@@ -1,0 +1,95 @@
+html {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-color: #999;
+}
+.content {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+header {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+header h1 {
+  font-size: 2em;
+  color: #555;
+}
+main {
+  margin-top: 20px;
+}
+main h2 {
+  visibility: hidden;
+  display: none;
+}
+.search {
+  width: 350px;
+  margin-top: 20px;
+}
+.search > div {
+  width: 350px;
+  position: fixed;
+}
+.search form {
+  display: flex;
+  position: relative;
+}
+.search input[type="text"] {
+  padding: 6px 12px;
+  line-height: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1 0 auto;
+}
+.search input[type="button"] {
+  flex: 0 1 auto;
+  margin-left: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 4px 8px;
+}
+.search input[type="button"]:hover {
+  background-color: #eee;
+}
+.dict {
+  margin-top: 20px;
+  position: relative;
+  border: 1px solid #ccc;
+  display: flex;
+}
+.dict h3 {
+  color: #555;
+  padding: 6px 2px;;
+  font-size: 16px;
+  writing-mode: vertical-rl;
+  background-color: #555;
+  color: #fff;
+}
+.dict > ul {
+  margin-top: 10px;
+  padding: 5px;
+}
+.list {
+  flex: 1 0 auto;
+  margin-left: 10px;
+}
+.list ul {
+  font-size: 1.2em;
+}
+.list ul li {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 15px;
+}
+/*
+.list ul li:nth-of-type(2n) {
+  background-color: #eee;
+}
+*/
+.list ul li:hover {
+  /*background-color: #90C3D4;*/
+  background-color: #007F77;
+  background-color: rgba(0, 127, 119, 1);
+  color: #fff;
+}
