@@ -3,10 +3,35 @@ html {
   font-family: 'Raleway', sans-serif;
   font-color: #999;
 }
+*:focus {
+  outline: 0;
+}
 .content {
   width: 900px;
   margin: 0 auto;
   display: flex;
+}
+input[type="text"] {
+  padding: 6px 12px;
+  line-height: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1 0 auto;
+}
+input[type="button"] {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 6px 12px;
+}
+input[type="button"]:hover {
+  background-color: #eee;
+}
+select {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 6px 12px;
 }
 header {
   padding: 15px 0;
@@ -35,26 +60,18 @@ main h2 {
   display: flex;
   position: relative;
 }
-.search input[type="text"] {
-  padding: 6px 12px;
-  line-height: 1.2em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.search-text {
   flex: 1 0 auto;
 }
-.search input[type="button"] {
+.search-btn {
   flex: 0 1 auto;
   margin-left: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  padding: 4px 8px;
 }
-.search input[type="button"]:hover {
-  background-color: #eee;
+.add-btn {
+  margin-top: 15px;
 }
 .dict {
-  margin-top: 20px;
+  margin-top: 15px;
   position: relative;
   border: 1px solid #ccc;
   display: flex;
@@ -62,14 +79,47 @@ main h2 {
 .dict h3 {
   color: #555;
   padding: 6px 2px;;
-  font-size: 16px;
   writing-mode: vertical-rl;
   background-color: #555;
   color: #fff;
+  width: 1.1em;
 }
-.dict > ul {
-  margin-top: 10px;
-  padding: 5px;
+.dict dl {
+  padding: 10px;
+  line-height: 1.4;
+}
+.term, .part-of-speech, .pronunciation {
+  display: inline;
+  margin-right: 5px;
+  vertical-align: center;
+  line-height: 20px;
+}
+.term {
+  font-weight: bold;
+}
+.part-of-speech i {
+  font-style: italic;
+  vertical-align: 1px;
+  font-size: 15px;
+}
+.pronunciation {
+  white-space: nowrap;
+}
+.pronunciation img {
+  padding: 0 7px;
+  position: relative;
+  top: 3px;
+}
+.definition {
+  display: list-item;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.definition q {
+  display: block;
+  margin-left: 20px;
+  font-size: 15px;
+  color: #007f77;
 }
 .list {
   flex: 1 0 auto;
@@ -92,4 +142,9 @@ main h2 {
   background-color: #007F77;
   background-color: rgba(0, 127, 119, 1);
   color: #fff;
+}
+.list form {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 10px 0 20px;
 }

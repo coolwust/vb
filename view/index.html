@@ -19,26 +19,37 @@
           <div>
             <h2>Search</h2>
             <form>
-              <input type="text" placeholder="Search Vocabulary">
-              <input type="button" value="Search">
+              <input type="text" placeholder="Search Vocabulary" class="search-text">
+              <input type="button" value="Search" class="search-btn">
             </form>
             <section class="dict">
-              <ul>
-                <li>
-                  <div class="part-of-speech">
-                  content verb \ˈkän-ˌtent\
-                  </div>
-                  <div class="definition">
-                  to appease the desires of, to limit (oneself) in requirements, desires, or actions
-                  </div>
-                  <ul class="examples">
-                    <li>The toys contented the children, at least for a little while.</li>
-                    <li>a person easily contented by life's simple pleasures.</li>
-                  </ul>
-                </li>
-              </ul>
+              <dl>
+                <dt class="term"><dfn>content</dfn></dt>
+                <dd class="part-of-speech"><i>verb</i></dd>
+                <dd class="pronunciation">\ˈkän-ˌtent\<img src="/public/img/sound.gif"></dd>
+                <dd class="definition">the things that are within. 
+                  <q><b>contents</b> of a room</q>
+                </dd>
+                <dd class="definition">the important part or meaning (as of a book) 
+                  <q>Do you understand the <b>contents</b> of the paragraph?</q>
+                </dd>
+
+                <hr>
+                <dt class="term"><dfn>pronunciation</dfn></dt>
+                <dd class="part-of-speech"><i>verb</i></dd>
+                <dd class="pronunciation">\prə-ˌnən-sē-ˈā-shən\
+                  <a href="#"><img src="/public/img/sound.gif"></a>
+                </dd>
+                <dd class="definition">the things that are within. 
+                  <q><b>contents</b> of a room</q>
+                </dd>
+                <dd class="definition">the important part or meaning (as of a book) 
+                  <q>Do you understand the <b>contents</b> of the paragraph?</q>
+                </dd>
+              </dl>
               <h3>Merriam-Webster's Elementary Dictionary</h3>
             </section>
+            <input type="button" value="Add this vocabulary" class="add-btn">
           </div>
         </section>
         <section class="list">
@@ -59,6 +70,14 @@
             <li>adfafd</li>
             <li>adfafd</li>
           </ul>
+          <form>
+            <input type="button" value="Previous">
+            <select>
+              <option value="1">Page 1</option>
+              <option value="2">Page 2</option>
+            </select>
+            <input type="button" value="Next">
+          </form>
         </section>
       </div>
     </main>
